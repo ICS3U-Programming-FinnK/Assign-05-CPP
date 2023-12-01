@@ -8,7 +8,7 @@
 float tax(float subtotal, float total) {
     // Checking if the subtotal or total is negative
     if (subtotal < 0 || total < 0) {
-        throw std::invalid_argument("Error: subtotal or total cannot be negative");
+        throw std::invalid_argument("you inputted a negative value of CAD$");
     }  // Calculating the tax percentage
     float tax_percentage = ((total - subtotal) / subtotal) * 100;
     return tax_percentage;
